@@ -1,9 +1,4 @@
-import pygame
+import pyglet
 
-pygame.init()
-
-mainWindow = pygame.display.set_mode(640, 480)
-
-while 1:
-    mainWindow.fill(0, 0, 0)
-    pygame.display.flip()
+mainWindow = pyglet.window.Window(800, 600, resizable=True, caption='Kettle')
+pyglet.app.run()
