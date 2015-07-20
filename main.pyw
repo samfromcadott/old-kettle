@@ -1,4 +1,6 @@
 import pyglet
 
-mainWindow = pyglet.window.Window(800, 600, resizable=True, caption='Kettle')
+mainWindow = pyglet.window.Window(resizable=True, caption='Kettle')
+mainWindow.maximize()
+
 pyglet.app.run()
