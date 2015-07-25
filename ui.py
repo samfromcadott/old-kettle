@@ -1,5 +1,8 @@
-class menu:
-    """Drop down menu object"""
-    def __init__(self, label):
-        self.label = label
-    contents = []
+from gi.repository import Gtk
+
+def windowStart():
+    builder = Gtk.Builder()
+    builder.add_from_file("interface.glade")
+    mainWindow = builder.get_object("window1")
+    mainWindow.show_all()
+    mainWindow.connect("delete-event", Gtk.main_quit)
