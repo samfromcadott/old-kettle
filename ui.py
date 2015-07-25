@@ -1,10 +1,10 @@
 from gi.repository import Gtk
 
-class Handler:
+class Handler: #Handler for window elements
     def onDeleteWindow(self, *args):
         Gtk.main_quit(*args)
 
-def windowStart():
+def windowStart(): #Creates main window, runs at startup
     builder = Gtk.Builder()
     builder.add_from_file("interface.glade")
     builder.connect_signals(Handler())
