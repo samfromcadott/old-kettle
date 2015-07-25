@@ -10,4 +10,5 @@ def windowStart():
     builder.connect_signals(Handler())
 
     mainWindow = builder.get_object("window1")
+    mainWindow.maximize()
     mainWindow.show_all()
